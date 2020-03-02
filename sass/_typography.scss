@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.33;
+}
+
+p {
+  margin-top: 0;
+  line-height: $line-height;
+}
+
+ul, ol {
+  line-height: $line-height;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+
+  &:not([class]) {
+    border-bottom: 1px solid $secondary-color;
+  }
+}

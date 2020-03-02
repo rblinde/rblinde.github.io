@@ -1,0 +1,15 @@
+.no-outline {
+  outline: none;
+}
+
+@mixin bp-up($bp) {
+  @media only screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin bp-down($bp) {
+  @media only screen and (max-width: $bp) {
+    @content;
+  }
+}

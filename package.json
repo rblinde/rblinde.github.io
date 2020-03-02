@@ -1,0 +1,19 @@
+{
+  "name": "rblinde.github.io",
+  "version": "1.0.0",
+  "description": "Resume website for rblinde",
+  "author": "rblinde",
+  "homepage": "https://rblinde.github.io",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "css": "node-sass -w sass/ -o ./ --output-style compressed",
+    "dev": "npm-run-all --parallel serve css",
+    "serve": "http-server ./ -p 8000"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

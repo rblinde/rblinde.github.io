@@ -1,0 +1,53 @@
+.section {
+  display: grid;
+  padding: 3rem 0;
+  border-bottom: 1px solid $secondary-color;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  @include bp-up($bp-md) {
+    grid-template-columns: 25% auto;
+    padding: 5rem 0;
+  }
+}
+
+.section__title,
+.item__title {
+  margin-top: 0;
+}
+
+.item {
+  margin-bottom: 3rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.item__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+  span {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.item__subtitle {
+  margin: 0;
+  color: $secondary-color;
+}
+
+.item__date {
+  font-size: 1rem;
+  color: $primary-color-darken;
+}
+
+.item__tech {
+  display: inline-block;
+  color: $primary-color-darken;
+}
